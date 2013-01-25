@@ -1,0 +1,18 @@
+<table class="table">
+  <tr>
+    <td> Customer </td>
+    <td> <%= @subscription.email %> </td>
+  </tr>
+  <tr>
+    <td> Plan </td>
+    <td><%= @subscription.plan.plan_name %> </td>
+  </tr>
+  <tr>
+    <td> Amount </td>
+    <td> <%= @subscription.plan.amount %> </td>
+  </tr>
+  <tr>
+    <td> Subscribed on</td>
+    <td> <%= @subscription.created_at %> </td>
+  </tr>
+</table>

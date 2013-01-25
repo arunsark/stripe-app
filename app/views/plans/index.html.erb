@@ -1,0 +1,9 @@
+<% @plans.each do |plan| %>
+<table class="table">
+  <tr>
+    <td> <%= link_to "Subscribe to #{plan.plan_name} for
+    $#{plan.amount}", new_subscription_path(plan_id: plan.id), class: "btn btn-primary" %>
+    </td>
+  </tr>
+</table>
+<% end %>
